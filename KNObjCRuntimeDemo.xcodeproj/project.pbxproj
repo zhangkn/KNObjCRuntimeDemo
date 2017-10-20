@@ -15,6 +15,11 @@
 		E193BCB71F999CF800B4E369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E193BCB51F999CF800B4E369 /* LaunchScreen.storyboard */; };
 		E193BCC21F999CF800B4E369 /* KNObjCRuntimeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E193BCC11F999CF800B4E369 /* KNObjCRuntimeDemoTests.m */; };
 		E193BCCD1F999CF800B4E369 /* KNObjCRuntimeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E193BCCC1F999CF800B4E369 /* KNObjCRuntimeDemoUITests.m */; };
+		E193BCDE1F999E4300B4E369 /* KNRuntimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E193BCDD1F999E4300B4E369 /* KNRuntimeKit.m */; };
+		E193BCE11F999FF800B4E369 /* KNTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E193BCE01F999FF800B4E369 /* KNTestClass.m */; };
+		E193BCE71F99A34900B4E369 /* KNTestClass+KNCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E193BCE61F99A34900B4E369 /* KNTestClass+KNCategory.m */; };
+		E193BCEA1F99A41D00B4E369 /* KNTestClass+KNSwapMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E193BCE91F99A41D00B4E369 /* KNTestClass+KNSwapMethod.m */; };
+		E193BCED1F99A4A000B4E369 /* KNTestClass+KNAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E193BCEC1F99A4A000B4E369 /* KNTestClass+KNAssociatedObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		E193BCC81F999CF800B4E369 /* KNObjCRuntimeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KNObjCRuntimeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E193BCCC1F999CF800B4E369 /* KNObjCRuntimeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNObjCRuntimeDemoUITests.m; sourceTree = "<group>"; };
 		E193BCCE1F999CF800B4E369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E193BCDC1F999E4300B4E369 /* KNRuntimeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNRuntimeKit.h; sourceTree = "<group>"; };
+		E193BCDD1F999E4300B4E369 /* KNRuntimeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNRuntimeKit.m; sourceTree = "<group>"; };
+		E193BCDF1F999FF800B4E369 /* KNTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTestClass.h; sourceTree = "<group>"; };
+		E193BCE01F999FF800B4E369 /* KNTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTestClass.m; sourceTree = "<group>"; };
+		E193BCE51F99A34900B4E369 /* KNTestClass+KNCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNTestClass+KNCategory.h"; sourceTree = "<group>"; };
+		E193BCE61F99A34900B4E369 /* KNTestClass+KNCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNTestClass+KNCategory.m"; sourceTree = "<group>"; };
+		E193BCE81F99A41D00B4E369 /* KNTestClass+KNSwapMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNTestClass+KNSwapMethod.h"; sourceTree = "<group>"; };
+		E193BCE91F99A41D00B4E369 /* KNTestClass+KNSwapMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNTestClass+KNSwapMethod.m"; sourceTree = "<group>"; };
+		E193BCEB1F99A4A000B4E369 /* KNTestClass+KNAssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KNTestClass+KNAssociatedObject.h"; sourceTree = "<group>"; };
+		E193BCEC1F99A4A000B4E369 /* KNTestClass+KNAssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KNTestClass+KNAssociatedObject.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +116,8 @@
 		E193BCA61F999CF800B4E369 /* KNObjCRuntimeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E193BCAA1F999CF800B4E369 /* AppDelegate.h */,
-				E193BCAB1F999CF800B4E369 /* AppDelegate.m */,
-				E193BCAD1F999CF800B4E369 /* ViewController.h */,
-				E193BCAE1F999CF800B4E369 /* ViewController.m */,
-				E193BCB01F999CF800B4E369 /* Main.storyboard */,
-				E193BCB31F999CF800B4E369 /* Assets.xcassets */,
-				E193BCB51F999CF800B4E369 /* LaunchScreen.storyboard */,
-				E193BCB81F999CF800B4E369 /* Info.plist */,
+				E193BCDA1F999D2D00B4E369 /* Runtime */,
+				E193BCDB1F999D2D00B4E369 /* TestClass */,
 				E193BCA71F999CF800B4E369 /* Supporting Files */,
 			);
 			path = KNObjCRuntimeDemo;
@@ -117,6 +126,14 @@
 		E193BCA71F999CF800B4E369 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E193BCAA1F999CF800B4E369 /* AppDelegate.h */,
+				E193BCAB1F999CF800B4E369 /* AppDelegate.m */,
+				E193BCAD1F999CF800B4E369 /* ViewController.h */,
+				E193BCAE1F999CF800B4E369 /* ViewController.m */,
+				E193BCB01F999CF800B4E369 /* Main.storyboard */,
+				E193BCB31F999CF800B4E369 /* Assets.xcassets */,
+				E193BCB51F999CF800B4E369 /* LaunchScreen.storyboard */,
+				E193BCB81F999CF800B4E369 /* Info.plist */,
 				E193BCA81F999CF800B4E369 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +155,30 @@
 				E193BCCE1F999CF800B4E369 /* Info.plist */,
 			);
 			path = KNObjCRuntimeDemoUITests;
+			sourceTree = "<group>";
+		};
+		E193BCDA1F999D2D00B4E369 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				E193BCDC1F999E4300B4E369 /* KNRuntimeKit.h */,
+				E193BCDD1F999E4300B4E369 /* KNRuntimeKit.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		E193BCDB1F999D2D00B4E369 /* TestClass */ = {
+			isa = PBXGroup;
+			children = (
+				E193BCDF1F999FF800B4E369 /* KNTestClass.h */,
+				E193BCE01F999FF800B4E369 /* KNTestClass.m */,
+				E193BCE51F99A34900B4E369 /* KNTestClass+KNCategory.h */,
+				E193BCE61F99A34900B4E369 /* KNTestClass+KNCategory.m */,
+				E193BCE81F99A41D00B4E369 /* KNTestClass+KNSwapMethod.h */,
+				E193BCE91F99A41D00B4E369 /* KNTestClass+KNSwapMethod.m */,
+				E193BCEB1F99A4A000B4E369 /* KNTestClass+KNAssociatedObject.h */,
+				E193BCEC1F99A4A000B4E369 /* KNTestClass+KNAssociatedObject.m */,
+			);
+			path = TestClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +243,7 @@
 		E193BC9C1F999CF800B4E369 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KN;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Weiliu;
 				TargetAttributes = {
@@ -277,8 +319,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E193BCAF1F999CF800B4E369 /* ViewController.m in Sources */,
+				E193BCE11F999FF800B4E369 /* KNTestClass.m in Sources */,
+				E193BCED1F99A4A000B4E369 /* KNTestClass+KNAssociatedObject.m in Sources */,
+				E193BCE71F99A34900B4E369 /* KNTestClass+KNCategory.m in Sources */,
 				E193BCAC1F999CF800B4E369 /* AppDelegate.m in Sources */,
+				E193BCDE1F999E4300B4E369 /* KNRuntimeKit.m in Sources */,
 				E193BCA91F999CF800B4E369 /* main.m in Sources */,
+				E193BCEA1F99A41D00B4E369 /* KNTestClass+KNSwapMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
