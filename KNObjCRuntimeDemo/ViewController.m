@@ -47,6 +47,23 @@
     
     
     
+    NSArray *arrfetchIvarList = [KNRuntimeKit fetchPropertyList:[KNTestClass class]];
+    
+    NSLog(@"%@",arrfetchIvarList);
+    
+    
+    NSArray *arrfetchIvarListfetchMethodList = [KNRuntimeKit fetchMethodList:[KNTestClass class]];
+    
+    NSLog(@"%@",arrfetchIvarListfetchMethodList);
+    
+    
+    NSArray *arrfetchIvarListfetchMethodListfetchProtocolList = [KNRuntimeKit fetchProtocolList:[KNTestClass class]];
+    
+    NSLog(@"%@",arrfetchIvarListfetchMethodListfetchProtocolList);
+    
+    
+    
+    
 }
 
 
