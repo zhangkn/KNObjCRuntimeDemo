@@ -73,6 +73,27 @@
     NSLog(@"OC替换的方法：%@", value);
 }
 
+#pragma mark - ******** 消息转发
+/**
+流程：
+http://blog.csdn.net/z929118967/article/details/78032699
+1.动态方法解析
+向当前类发送 resolveInstanceMethod: 信号，检查是否动态向该类添加了方法。（迷茫请搜索：@dynamic）
+2.快速消息转发
+检查该类是否实现了 forwardingTargetForSelector: 方法，若实现了则调用这个方法。若该方法返回值对象非nil或非self，则向该返回对象重新发送消息。
+3.标准消息转发
+runtime发送methodSignatureForSelector:消息获取Selector对应的方法签名。返回值非空则通过forwardInvocation:转发消息，返回值为空则向当前对象发送doesNotRecognizeSelector:消息，程序崩溃退出。
+
+利用上述过程中的2、3两种方式来完成消息转发。
+ 
+ 
+ 两种消息转发方式的比较
+ 
+ 快速消息转发：简单、快速、但仅能转发给一个对象。
+ 标准消息转发：稍复杂、较慢、但转发操作实现可控，可以实现多对象转发
+ 
+**/
+
 /**
  没有找到SEL的IML实现时会执行下方的方法
  

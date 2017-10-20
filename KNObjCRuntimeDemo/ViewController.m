@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "KNRuntimeKit.h"
+#import "KNTestClass.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +18,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+//    获取成员变量list
+   NSArray *arr = [KNRuntimeKit fetchIvarList:[KNTestClass class]];
+    
+    NSLog(@"%@",arr);
+    /**
+     *     ivarName = "_var2";
+     type = i;
+     },
+     {
+     ivarName = "_var3";
+     type = c;
+     },
+     {
+     ivarName = "_var4";
+     type = d;
+     },
+     {
+     ivarName = "_var5";
+     type = f;
+     },
+     {
+     ivarName = "_publicProperty1";
+     type = "@\"NSArray\"";
+     },
+     
+     */
+    
+    
+    
 }
 
 
